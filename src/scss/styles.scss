@@ -1,0 +1,23 @@
+@import './reset.scss';
+@import './config/fonts.scss';
+@import './config/colors.scss';
+
+//TODO: GENERAL
+@import './config/navbar.scss';
+@import './config/preloader.scss';
+@import './config/progress.scss';
+
+//TODO: HERO
+@import './index/hero/text.scss';
+
+//TODO: CARDS
+@import './index/cards/layout.scss';
+@import './index/cards/text.scss';
+
+//TODO: CONTACT
+@import './contact/footer.scss';
+
+//TODO: PROJECTS
+@import './project/projet.scss';
+
+

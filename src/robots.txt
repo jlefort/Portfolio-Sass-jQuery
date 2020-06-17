@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /
+
+Sitemap: http://julienlefort.fr/sitemap.xml
+Sitemap: https://julienlefort.fr/sitemaps.xml
+

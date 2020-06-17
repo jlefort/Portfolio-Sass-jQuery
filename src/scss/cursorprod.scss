@@ -1,0 +1,47 @@
+@mixin desktop {
+    @media (min-width: 900px) {
+        @content;
+    }
+}
+
+
+@include desktop {
+
+    html,
+    body {
+
+        &,
+        * {
+            cursor: none;
+        }
+    }
+
+    .cursor-dot,
+    .cursor-dot-outline {
+        z-index: 7;
+        pointer-events: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border-radius: 50%;
+        opacity: 0;
+        transform: translate(-50%, -50%);
+        transition: opacity 0.3s ease-in-out,
+            transform 0.3s ease-in-out;
+    }
+
+    .cursor-dot {
+        $size: 8px;
+        width: $size;
+        height: $size;
+        background-color: #585B4D;
+    }
+
+    .cursor-dot-outline {
+        $size: 32px;
+        width: $size;
+        height: $size;
+        background-color: rgba(88, 91, 77, 0.5);
+
+    }
+}

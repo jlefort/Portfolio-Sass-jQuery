@@ -1,0 +1,92 @@
+@mixin min {
+    @media (max-width: 750px) {
+      @content;
+    }
+  }
+
+footer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 0vw 0vw 27px 0;
+    font-size: 13px;
+    font-family: 'gotham', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #999999;
+}
+
+
+
+footer a {
+    font-family: 'gotham', sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    transition: letter-spacing 0.4s;
+
+}
+
+footer a:hover{
+    letter-spacing: 2px;
+    @include min {
+        letter-spacing: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        font-size: 12px;
+        font-weight: 300;
+        padding: 0vw 0vw 70px 0vw;
+    }
+}
+
+@media (max-width: 350px) {
+    footer {
+        font-size: 11px;
+        font-weight: 300;
+    }
+}
+
+
+.footer--project {
+    position: relative;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 5vw 0vw 27px 0px;
+    font-size: 15px;
+    font-family: 'gotham', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #676767;
+}
+
+
+
+.footer--project a {
+    font-family: 'gotham', sans-serif;
+    font-weight: 300;
+    color: #000000;
+    transition: all 2s;
+}
+
+@media (max-width: 768px) {
+    .footer--project {
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 16px;
+        padding: 10vw 0vw 70px 0vw;
+    }
+}
+
+@media (max-width: 350px) {
+    .footer--project {
+        font-size: 11px;
+        line-height: 16px;
+        font-weight: 300;
+    }
+}

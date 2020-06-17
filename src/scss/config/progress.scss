@@ -1,0 +1,29 @@
+@mixin min {
+  @media (max-width: 750px) {
+    @content;
+  }
+}
+
+.progress {
+    height: 4px;
+    width: 100%;
+    position: fixed;
+    background: rgba(88, 91, 77, 0.5);
+    z-index: 7;
+    @include min {
+      bottom: 0px;
+    }
+  }
+  
+  .progress__bar {
+    height: 4px;
+    width: 100%;
+    position: fixed;
+    background-color: #585B4D;
+    z-index: 7;
+    @include min {
+      bottom: 0px;
+    }
+  }
+  
+  
